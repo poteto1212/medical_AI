@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  medical_ai:
+    build: .
+    ports:
+      - "3333:3333"
+    volumes:
+      - ./notebooks:/workspace
+      - ./data:/workspace/data
+    container_name: medical_ai
