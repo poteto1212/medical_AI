@@ -1,21 +1,23 @@
 {
-    "name": "Make Material",
-    "dockerComposeFile": "../docker-compose.yml",
-    "service": "medical_ai",
-    "workspaceFolder": "/workspace",
-    "extensions": [
-      "ms-python.python",
-      "ms-toolsai.jupyter",
-      "ms-toolsai.datawrangler",
-      "oderwat.indent-rainbow",
-      "Gruntfuggly.todo-tree",
-      "KevinRose.vsc-python-indent",
-      "christian-kohler.path-intellisense"
-
-
-    ],
-    "settings": {
-      "python.pythonPath": "/usr/local/bin/python"
-    }
+  "name": "Medical Ai",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "medical_ai",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.datawrangler",
+    "oderwat.indent-rainbow",
+    "Gruntfuggly.todo-tree",
+    "KevinRose.vsc-python-indent",
+    "christian-kohler.path-intellisense"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    // コンテナがアイドル状態でも切断されないようにする
+    "remote.containers.idleTimeout": 0,
+    // Jupyter の接続ログを詳細に出してデバッグしやすく
+    "jupyter.logging.level": "debug"
+  },
 }
   
