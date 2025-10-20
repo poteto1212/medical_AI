@@ -1,4 +1,4 @@
-FROM python:3.10.12-slim
+FROM python:3.10.12
 
 # システムパッケージ
 RUN apt-get update && apt-get install -y \
@@ -6,6 +6,12 @@ RUN apt-get update && apt-get install -y \
     wget \
     unzip \
     fonts-noto-cjk \
+    iputils-ping \
+    net-tools \
+    curl \
+    locales \
+    tzdata \
+    procps \
     && rm -rf /var/lib/apt/lists/*
 
 # --- requirements.txtをコピー ---
