@@ -1,9 +1,9 @@
-tensorflow==2.15.0
-keras==2.15.0
-matplotlib==3.7.1
-numpy==1.25.2
-pandas==2.0.3
-scikit-learn==1.2.2
-jupyterlab==4.0.5
+tensorflow
+keras
+matplotlib
+numpy
+pandas
+scikit-learn
+jupyterlab
 japanize-matplotlib
 scipy
