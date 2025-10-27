@@ -27,5 +27,5 @@ RUN pip install --upgrade pip \
 WORKDIR /workspace
 
 # Jupyter起動用
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser", "--ServerApp.token=''","--ServerApp.password=''","--ServerApp.quit_button=False", "--NotebookApp.disable_check_xsrf=True"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=2929", "--allow-root", "--no-browser", "--ServerApp.token=''","--ServerApp.password=''","--ServerApp.quit_button=False", "--NotebookApp.disable_check_xsrf=True"]
 
