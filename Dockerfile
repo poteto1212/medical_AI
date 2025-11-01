@@ -1,4 +1,4 @@
-FROM python:3.10.12
+FROM python:3.11-slim
 
 # システムパッケージ
 RUN apt-get update && apt-get install -y \
@@ -27,5 +27,5 @@ RUN pip install --upgrade pip \
 WORKDIR /workspace
 
 # Jupyter起動用
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=3333", "--allow-root", "--no-browser", "--ServerApp.token=''","--ServerApp.password=''","--ServerApp.quit_button=False","--NotebookApp.websocket_ping_interval=30","--NotebookApp.websocket_ping_timeout=86400"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=2929", "--allow-root", "--no-browser", "--ServerApp.token=''","--ServerApp.password=''","--ServerApp.quit_button=False", "--NotebookApp.disable_check_xsrf=True"]
 

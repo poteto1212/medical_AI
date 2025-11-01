@@ -3,7 +3,7 @@ services:
   medical_ai:
     build: .
     ports:
-      - "3333:3333"
+      - "2929:2929"
     volumes:
       - ./notebooks:/workspace
       - ./data:/workspace/data
